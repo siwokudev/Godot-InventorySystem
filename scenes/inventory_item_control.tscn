@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6r6qc8hckqc5"]
+
+[ext_resource type="Script" path="res://scripts/inventory_item_control.gd" id="1_f7sts"]
+
+[node name="InventoryItemControl" type="Control" node_paths=PackedStringArray("actionsContainer", "nameLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 436.0
+offset_top = 126.0
+offset_right = -391.0
+offset_bottom = -253.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+script = ExtResource("1_f7sts")
+actionsContainer = NodePath("VBoxContainer")
+nameLabel = NodePath("NameLabel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 105.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NameLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 98.0
+grow_horizontal = 2
